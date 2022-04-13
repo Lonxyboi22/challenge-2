@@ -81,11 +81,11 @@ header nav ul li a:hover {
 
 .about-me h3 {
     border-right: 4px solid darkblue;
-    font-size: 30px;
-    padding: 2em;
-    margin: 5px;
+    font-size: 48px;
+    padding: 2em 0px;
+    margin: 5px -2em;
+    text-align: right;
     width: 35%;
-    align-content: right;
     margin: 3.5%;
 }
 
@@ -93,7 +93,7 @@ header nav ul li a:hover {
     font-size: 15px;
     padding: 15px;
     margin: 5px 0 15px 0;
-    width: 35%;
+    width: 100%;
     text-align: left;
     margin: 3.5%;
     line-height: 1.5;
@@ -110,7 +110,7 @@ header nav ul li a:hover {
 .project-block h2 {
     border-right: 4px solid darkblue;
     font-size: 48px;
-    padding: 2em;
+    padding: 2em 0px;
     margin: 5px -2em;
     width: 35%;
     text-align: right;
@@ -120,7 +120,7 @@ header nav ul li a:hover {
 .project-block article {
     width: 40%;
 } 
-.project-title1 {
+.projects {
     padding: 15px 20px;
     margin: 20px -20px;
     background-image: url(../images/river.jpg);
@@ -128,22 +128,23 @@ header nav ul li a:hover {
     background-position: center;
     opacity: 0.75;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
     align-items: flex-start;
     background-position: 80%;
+    width: 100%;
 }
-.project-title1:hover {
+.projects:hover {
     opacity: 1;
 }
 
-.project-title1 a {
+.projects a {
     color: aliceblue;
     background-color: #226688;
     font-size: 28px;
 
 }
-.project-title1 p {
+.projects p {
     color: aliceblue;
     background-color: #226688;
 }
