@@ -71,6 +71,8 @@ header nav ul li a:hover {
     background-color: #226688;
     color: aliceblue;
 }
+
+/* about me section and work section */
 .main-body {
     padding: 20px;
     margin: 20px;
@@ -122,7 +124,6 @@ header nav ul li a:hover {
     margin: 3.5%;
 }
 .projects {
-
     display: grid;
     grid-template-columns: 325px 300px 300px;
     gap: 15px;
@@ -242,31 +243,77 @@ footer h3 {
     font-size: 15px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
-@media screen and (max-width: 760px){
+/* add media queries to make it smoother */
+@media screen and (max-width: 980px) {
     header {
+        padding-bottom: 0;
         justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .main-body {
+        width: 100%;
+      }
+      
+      .main-body {
+        text-align: center;
+      }
+
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+
+    .about-me {
+
+        display: block;
+        align-content: center;
+      }
+    
+      .about-me h3 {
+        padding: 0;
+        margin: 0;
+        border-right: none;
+        border-bottom: 4px solid darkblue;
+        flex: 2 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+      .about-me p {
         flex-wrap: wrap;
       }
-    header nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    /* about me section */
-    .about-me {
-        justify-content: center;
+      #my-work {
+        border-right: none;
+        padding: 0;
+        margin: 0px;
+        text-align: center;
+      }
+      .projects {
+        display: grid;
+        grid-template-columns: 300px;
+        gap: 15px;
+        grid-auto-rows: minmax(300px, auto);
     }
     
-    .about-me h3 {
-        border-bottom: 4px solid darkblue;
-        font-size: 35px;
-        padding: 2em 1em;
-        margin: 5px -2em;
-        text-align: center;
-        width: 35%;
-        margin: 3.5%;
-    }
-
-
-}
+  }
