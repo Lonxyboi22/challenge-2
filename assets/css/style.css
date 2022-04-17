@@ -71,6 +71,12 @@ header nav ul li a:hover {
     background-color: #226688;
     color: aliceblue;
 }
+.main-body {
+    padding: 20px;
+    margin: 20px;
+    max-width: fit-content;
+
+}
 
 /* about me section */
 .about-me {
@@ -82,7 +88,7 @@ header nav ul li a:hover {
 .about-me h3 {
     border-right: 4px solid darkblue;
     font-size: 48px;
-    padding: 2em 0px;
+    padding: 2em 1em;
     margin: 5px -2em;
     text-align: right;
     width: 35%;
@@ -100,66 +106,167 @@ header nav ul li a:hover {
 }
 /* My Work section styling */
 .project-block {
-    color: darkblue;
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    justify-content: center;
+    padding: 0 10px;
 }
 
-.project-block h2 {
+#my-work h2 {
     border-right: 4px solid darkblue;
     font-size: 48px;
-    padding: 2em 0px;
+    color: darkblue;
+    padding: 2em 1em;
     margin: 5px -2em;
-    width: 35%;
     text-align: right;
+    width: 25%;
     margin: 3.5%;
 }
-
-.project-block article {
-    width: 40%;
-} 
 .projects {
-    padding: 15px 20px;
-    margin: 20px -20px;
+
+    display: grid;
+    grid-template-columns: 325px 300px 300px;
+    gap: 15px;
+    grid-auto-rows: minmax(300px, auto);
+}
+.portfolio {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
     background-image: url(../images/river.jpg);
     background-size: cover;
-    background-position: center;
-    opacity: 0.75;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-position: 80%;
-    width: 100%;
+    opacity: .7;
 }
-.projects:hover {
+.portfolio:hover {
     opacity: 1;
 }
-
-.projects a {
-    color: aliceblue;
-    background-color: #226688;
+.portfolio a {
+    color: #024e76;
     font-size: 28px;
+}
 
+.project-title2 {
+    grid-column: 1;
+    grid-row: 2;
+    background-image: url(../images/sunset.jpg);
+    background-size: cover;
+    opacity: .7;
 }
-.projects p {
-    color: aliceblue;
-    background-color: #226688;
+.project-title2:hover {
+    opacity: 1;
 }
+.project-title2 a {
+    color: #024e76;
+    font-size: 28px;
+}
+
+.project-title3 {
+    grid-column: 2;
+    grid-row: 2;
+    background-image: url(../images/soothing\ background.jpg);
+    background-size: cover;
+    opacity: .7;
+}
+.project-title3:hover {
+    opacity: 1;
+}
+.project-title3 a {
+    color: #024e76;
+    font-size: 28px;
+}
+
+.run-buddy {
+    grid-column: 1;
+    grid-row: 3;
+    background-image: url(../images/Screenshot\ 2022-04-08\ 163456.png);
+    background-size: cover;
+    opacity: .7;
+}
+.run-buddy:hover {
+    opacity: 1;
+}
+.run-buddy a {
+    color: #024e76;
+    font-size: 28px;
+}
+
+.project-title5 {
+    grid-column: 2;
+    grid-row: 3;
+    background-image: url(../images/shutterstock_686568868.jpg);
+    background-size: cover;
+    opacity: .7;
+}
+.project-title5:hover {
+    opacity: 1;
+}
+.project-title5 a {
+    color: #024e76;
+    font-size: 28px;
+} 
+
 
 
 /* Footer/contact me section */
 footer {
-    width: 100%;
-    padding: 40px 35px;
+    color: darkblue;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 footer h3 {
-    color: #024e76;
-    font-size: 30px;
-    margin: 0;
+    border-right: 4px solid darkblue;
+    font-size: 48px;
+    color: darkblue;
+    padding: 2em 1em;
+    margin: 5px -2em;
+    text-align: right;
+    width: 25%;
+    margin: 3.5%;
+}
+.nav {
+    margin: 7px 0;
+    padding: 3em 2em;
+}
+.nav address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav address section {
+    display: inline;
+}
+.nav address section div {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 15px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 760px){
+    header {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    /* about me section */
+    .about-me {
+        justify-content: center;
+    }
+    
+    .about-me h3 {
+        border-bottom: 4px solid darkblue;
+        font-size: 35px;
+        padding: 2em 1em;
+        margin: 5px -2em;
+        text-align: center;
+        width: 35%;
+        margin: 3.5%;
+    }
+
+
 }
