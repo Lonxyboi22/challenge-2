@@ -125,7 +125,7 @@ header nav ul li a:hover {
 }
 .projects {
     display: grid;
-    grid-template-columns: 325px 300px 300px;
+    grid-template-columns: 545px 545px;
     gap: 15px;
     grid-auto-rows: minmax(300px, auto);
 }
@@ -137,6 +137,8 @@ header nav ul li a:hover {
     background-image: url(../images/river.jpg);
     background-size: cover;
     opacity: .7;
+    padding-top: 10%;
+    border:  4px solid #9fc8c9;
 }
 .portfolio:hover {
     opacity: 1;
@@ -147,11 +149,13 @@ header nav ul li a:hover {
 }
 
 .project-title2 {
+    padding-top: 20%;
     grid-column: 1;
     grid-row: 2;
     background-image: url(../images/sunset.jpg);
     background-size: cover;
     opacity: .7;
+    border: 4px solid #9fc8c9;
 }
 .project-title2:hover {
     opacity: 1;
@@ -162,11 +166,13 @@ header nav ul li a:hover {
 }
 
 .project-title3 {
+    padding-top: 20%;
     grid-column: 2;
     grid-row: 2;
     background-image: url(../images/soothing\ background.jpg);
     background-size: cover;
     opacity: .7;
+    border: 4px solid #9fc8c9;
 }
 .project-title3:hover {
     opacity: 1;
@@ -182,6 +188,8 @@ header nav ul li a:hover {
     background-image: url(../images/Screenshot\ 2022-04-08\ 163456.png);
     background-size: cover;
     opacity: .7;
+    padding-top: 20%;
+    border: 4px solid #9fc8c9;
 }
 .run-buddy:hover {
     opacity: 1;
@@ -197,6 +205,8 @@ header nav ul li a:hover {
     background-image: url(../images/shutterstock_686568868.jpg);
     background-size: cover;
     opacity: .7;
+    padding-top: 20%;
+    border: 4px solid #9fc8c9;
 }
 .project-title5:hover {
     opacity: 1;
@@ -238,10 +248,37 @@ footer h3 {
     display: inline;
 }
 .nav address section div {
-    padding: 10px 15px;
+    padding: 20% 15px;
     font-weight: lighter;
     font-size: 15px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    display: inline-block;
+}
+
+.text-box-full {
+    background-color: #9fc8c9;
+    padding: 20px;
+    left: 0px;
+    max-width: 20%;
+    color: #333333;
+}
+
+.text-box-full a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.text-box {
+    background-color: #9fc8c9;
+    padding: 20px;
+    left: 0px;
+    max-width: 40%;
+    color: #333333;
+}
+
+.text-box a {
+    color: #333333;
+    text-decoration: none;
 }
 
 
@@ -287,7 +324,6 @@ footer h3 {
   @media screen and (max-width: 768px) {
 
     .about-me {
-        background-color: yellow;
         display: block;
         align-content: center;
       }
@@ -297,22 +333,114 @@ footer h3 {
         margin: 0;
         border-right: none;
         border-bottom: 4px solid darkblue;
-        flex: 2 100%;
-        text-align: center;
+        flex: none;
+        text-align: left;
         align-items: center;
-        justify-content: center;
+        justify-content: left;
+        width: 100%;
       }
       .about-me p {
         flex-wrap: wrap;
       }
-      #my-work {
-        background-color: greenyellow;
+
+    #my-work h2, #contact-me h3 {
         border-right: none;
-        padding: 0;
-        margin: 0px;
-        text-align: center;
+        border-bottom: 4px solid darkblue;
+        font-size: 48px;
+        color: darkblue;
+        padding: 0em;
+        margin: 0em;
+        text-align: left;
+        width: 100%;
+        margin: 0%;
+        float: left;
+    }
+
+      .projects {
+        display: block;
+        float: left;
+        width: 100%;
       }
 
+      .project-block {
+        display: block;
+        float: left;
+        width: 100%;
+        padding: 0 0px;
+    
+      }
 
+    .text-box-full {
+        max-width: 60%;
+        text-align: left;
+    }
+
+    .text-box {
+        max-width: 60%;
+        text-align: left;
+
+   }
+
+    .portfolio {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .run-buddy {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .project-title2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .project-title3 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .project-title4 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        display: block;
+        padding: 40px;
+        margin-top: 40px;
+        float: left;
+        width: 100%;
+    }
+    footer h3 {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+
+    .nav {
+        padding: 0em 0em;
+    }
+
+    .nav address {
+        display: block;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0px;
+        float: left;
+        width: 100%;
+    }
+
+
+    .nav address section div {
+        padding: 5% 0px;
+        font-weight: lighter;
+        font-size: 15px;
+        text-shadow: 0 0 10px rgb(0 0 0 / 50%);
+        display: block;
+        text-align: left;
+    }
     
   }
